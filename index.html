@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="明线财经是一个开源金融新闻网页示例，聚合市场快讯、宏观观察、公司新闻和数据更正机制。"
+    />
+    <title>明线财经 | 开源金融新闻台</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark">明</span>
+          <span>
+            <strong>明线财经</strong>
+            <small>Open Market Newsroom</small>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="页面导航">
+          <a href="#brief">今日要闻</a>
+          <a href="#markets">市场看板</a>
+          <a href="#columns">栏目</a>
+          <a href="#trust">可信机制</a>
+          <a href="#open-source">开源</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="label">开源金融新闻台 · 非实时演示数据</p>
+          <h1>把市场噪音整理成可追踪的判断。</h1>
+          <p>
+            明线财经面向普通投资者、研究员和内容创作者，提供清晰的市场快讯、
+            宏观观察、公司新闻与来源记录。页面代码开源，适合继续接入真实数据源。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#brief">查看今日要闻</a>
+            <a class="btn btn-ghost" href="#open-source">参与开源</a>
+          </div>
+        </div>
+
+        <aside class="terminal-card" aria-label="市场编辑台示意">
+          <div class="terminal-head">
+            <span>Market Desk</span>
+            <strong>09:30</strong>
+          </div>
+          <div class="chart-window" aria-hidden="true">
+            <svg viewBox="0 0 520 220" role="img" aria-label="示意市场走势">
+              <path class="grid-line" d="M0 40H520M0 95H520M0 150H520" />
+              <path class="chart-fill" d="M0 170L50 142L96 154L142 116L190 125L238 84L282 102L326 68L370 76L420 44L470 58L520 30V220H0Z" />
+              <path class="chart-line" d="M0 170L50 142L96 154L142 116L190 125L238 84L282 102L326 68L370 76L420 44L470 58L520 30" />
+            </svg>
+          </div>
+          <div class="desk-feed">
+            <div>
+              <span>宏观</span>
+              <p>政策预期升温，长端利率回落。</p>
+            </div>
+            <div>
+              <span>公司</span>
+              <p>科技权重领涨，成交集中度继续抬升。</p>
+            </div>
+            <div>
+              <span>风险</span>
+              <p>油价波动推高通胀敏感板块关注度。</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metrics container" id="markets" aria-label="市场指标">
+        <article>
+          <span>上证指数</span>
+          <strong>3,084.62</strong>
+          <em class="up">+0.31%</em>
+        </article>
+        <article>
+          <span>恒生科技</span>
+          <strong>3,912.44</strong>
+          <em class="down">-0.18%</em>
+        </article>
+        <article>
+          <span>美元指数</span>
+          <strong>104.20</strong>
+          <em class="up">+0.07%</em>
+        </article>
+        <article>
+          <span>10年国债</span>
+          <strong>2.28%</strong>
+          <em class="down">-2 bps</em>
+        </article>
+      </section>
+
+      <section class="container section" id="brief">
+        <div class="section-title">
+          <p class="label">今日要闻</p>
+          <h2>编辑部正在跟踪这些变量。</h2>
+        </div>
+        <div class="headline-layout">
+          <article class="lead-story">
+            <span class="pill">宏观政策</span>
+            <h3>流动性预期重新定价，债券与成长股同时获得支撑</h3>
+            <p>
+              市场将注意力转向下一次政策窗口。短端资金价格保持稳定，长端收益率小幅下行，
+              权益市场的高估值板块获得阶段性修复。
+            </p>
+            <a href="#">阅读分析</a>
+          </article>
+          <div class="brief-list">
+            <article>
+              <span class="pill">公司</span>
+              <h3>半导体链条成交放量，资金继续寻找业绩确定性</h3>
+              <p>设备、先进封装和算力基础设施成为盘中最活跃方向。</p>
+            </article>
+            <article>
+              <span class="pill">商品</span>
+              <h3>原油价格震荡，航运与化工板块分化明显</h3>
+              <p>供给端扰动仍在，但需求预期没有同步上修。</p>
+            </article>
+            <article>
+              <span class="pill">海外</span>
+              <h3>美债收益率回落，全球风险资产情绪改善</h3>
+              <p>交易员等待新的通胀与就业数据确认降息节奏。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" id="columns">
+        <div class="section-title">
+          <p class="label">栏目矩阵</p>
+          <h2>像产品一样组织新闻。</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="feature-icon">FX</span>
+            <h3>盘前雷达</h3>
+            <p>开盘前梳理隔夜市场、政策日程、重点公司公告和风险提示。</p>
+          </article>
+          <article>
+            <span class="feature-icon">MA</span>
+            <h3>宏观注脚</h3>
+            <p>把利率、通胀、财政和汇率变化翻译成普通人能理解的资产影响。</p>
+          </article>
+          <article>
+            <span class="feature-icon">EQ</span>
+            <h3>公司观察</h3>
+            <p>关注财报、产业链、管理层变动和估值叙事的真实变化。</p>
+          </article>
+          <article>
+            <span class="feature-icon">DT</span>
+            <h3>数据更正</h3>
+            <p>每条重要数据保留来源、更新时间和更正记录，减少误读。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container split-section">
+        <div class="section-panel">
+          <div class="section-title compact">
+            <p class="label">快讯时间线</p>
+            <h2>按时间看市场。</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time>09:15</time>
+              <p>央行公开市场净投放维持温和，资金面预期稳定。</p>
+            </li>
+            <li>
+              <time>10:40</time>
+              <p>新能源与半导体板块分化，成交额向龙头集中。</p>
+            </li>
+            <li>
+              <time>13:20</time>
+              <p>离岸人民币窄幅波动，出口链个股表现相对克制。</p>
+            </li>
+            <li>
+              <time>15:05</time>
+              <p>收盘后将更新龙虎榜、ETF 资金流和重点公告。</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-panel accent" id="trust">
+          <div class="section-title compact">
+            <p class="label">可信机制</p>
+            <h2>新闻可以被检查。</h2>
+          </div>
+          <ul class="trust-list">
+            <li>每篇文章保留来源链接和首次发布时间。</li>
+            <li>重要指标标注是否为实时、延迟或人工录入。</li>
+            <li>读者可以通过 GitHub Issue 提交更正。</li>
+            <li>所有页面结构和样式公开，可被复用和审计。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container open-source" id="open-source">
+        <div>
+          <p class="label">Open source</p>
+          <h2>把它发布成你的金融新闻项目。</h2>
+          <p>
+            这个网页适合部署到 GitHub Pages。后续可以接入行情 API、RSS、
+            手动编辑后台，或者把每篇报道做成 Markdown。
+          </p>
+        </div>
+        <div class="source-actions">
+          <a class="btn btn-primary" href="https://github.com/">GitHub Pages</a>
+          <a class="btn btn-ghost" href="mailto:you@example.com">投稿联系</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>明线财经 · 开源金融新闻台</p>
+        <p>页面中的行情与新闻为演示内容，不构成投资建议。</p>
+      </div>
+    </footer>
+  </body>
+</html>
