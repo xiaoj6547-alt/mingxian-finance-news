@@ -31,31 +31,65 @@
     </header>
 
     <main id="top">
+      <section class="breaking-bar" aria-label="滚动快讯">
+        <div class="container breaking-inner">
+          <strong>盘中快讯</strong>
+          <span>10年期国债收益率下行 2 bps</span>
+          <span>算力基础设施板块成交放量</span>
+          <span>美元指数维持窄幅震荡</span>
+        </div>
+      </section>
+
       <section class="hero container">
         <div class="hero-copy">
           <p class="label">开源金融新闻台 · 非实时演示数据</p>
           <h1>把市场噪音整理成可追踪的判断。</h1>
           <p>
-            明线财经面向普通投资者、研究员和内容创作者，提供清晰的市场快讯、
-            宏观观察、公司新闻与来源记录。页面代码开源，适合继续接入真实数据源。
+            明线财经面向普通投资者、研究员和内容创作者，提供市场快讯、
+            宏观观察、公司新闻与来源记录。每条关键数据都能追溯，每次修订都留下痕迹。
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#brief">查看今日要闻</a>
-            <a class="btn btn-ghost" href="#open-source">参与开源</a>
+            <a class="btn btn-ghost" href="#trust">查看可信机制</a>
+          </div>
+          <div class="hero-proof" aria-label="站点特性">
+            <span>来源可查</span>
+            <span>更正公开</span>
+            <span>页面开源</span>
           </div>
         </div>
 
-        <aside class="terminal-card" aria-label="市场编辑台示意">
-          <div class="terminal-head">
+        <aside class="market-console" aria-label="市场编辑台示意">
+          <div class="console-head">
             <span>Market Desk</span>
-            <strong>09:30</strong>
+            <strong>09:30 CST</strong>
           </div>
           <div class="chart-window" aria-hidden="true">
-            <svg viewBox="0 0 520 220" role="img" aria-label="示意市场走势">
-              <path class="grid-line" d="M0 40H520M0 95H520M0 150H520" />
-              <path class="chart-fill" d="M0 170L50 142L96 154L142 116L190 125L238 84L282 102L326 68L370 76L420 44L470 58L520 30V220H0Z" />
-              <path class="chart-line" d="M0 170L50 142L96 154L142 116L190 125L238 84L282 102L326 68L370 76L420 44L470 58L520 30" />
+            <svg viewBox="0 0 680 300" role="img" aria-label="示意市场走势">
+              <defs>
+                <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#20c7b7" stop-opacity=".32" />
+                  <stop offset="100%" stop-color="#20c7b7" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path class="grid-line" d="M0 56H680M0 126H680M0 196H680M80 0V300M220 0V300M360 0V300M500 0V300M640 0V300" />
+              <path class="chart-fill" d="M0 218L58 184L116 198L176 142L234 158L292 96L350 128L410 84L468 102L526 58L588 78L680 42V300H0Z" />
+              <path class="chart-line" d="M0 218L58 184L116 198L176 142L234 158L292 96L350 128L410 84L468 102L526 58L588 78L680 42" />
             </svg>
+          </div>
+          <div class="console-grid">
+            <article>
+              <span>风险偏好</span>
+              <strong class="up">回升</strong>
+            </article>
+            <article>
+              <span>波动率</span>
+              <strong class="down">收敛</strong>
+            </article>
+            <article>
+              <span>资金面</span>
+              <strong>中性</strong>
+            </article>
           </div>
           <div class="desk-feed">
             <div>
@@ -66,15 +100,11 @@
               <span>公司</span>
               <p>科技权重领涨，成交集中度继续抬升。</p>
             </div>
-            <div>
-              <span>风险</span>
-              <p>油价波动推高通胀敏感板块关注度。</p>
-            </div>
           </div>
         </aside>
       </section>
 
-      <section class="metrics container" id="markets" aria-label="市场指标">
+      <section class="ticker container" id="markets" aria-label="市场指标">
         <article>
           <span>上证指数</span>
           <strong>3,084.62</strong>
@@ -104,11 +134,14 @@
         </div>
         <div class="headline-layout">
           <article class="lead-story">
-            <span class="pill">宏观政策</span>
+            <div class="story-meta">
+              <span class="pill">宏观政策</span>
+              <time>08:45 更新</time>
+            </div>
             <h3>流动性预期重新定价，债券与成长股同时获得支撑</h3>
             <p>
-              市场将注意力转向下一次政策窗口。短端资金价格保持稳定，长端收益率小幅下行，
-              权益市场的高估值板块获得阶段性修复。
+              市场将注意力转向下一次政策窗口。短端资金价格保持稳定，
+              长端收益率小幅下行，权益市场的高估值板块获得阶段性修复。
             </p>
             <a href="#">阅读分析</a>
           </article>
@@ -139,22 +172,22 @@
         </div>
         <div class="feature-grid">
           <article>
-            <span class="feature-icon">FX</span>
+            <span class="feature-icon">01</span>
             <h3>盘前雷达</h3>
             <p>开盘前梳理隔夜市场、政策日程、重点公司公告和风险提示。</p>
           </article>
           <article>
-            <span class="feature-icon">MA</span>
+            <span class="feature-icon">02</span>
             <h3>宏观注脚</h3>
-            <p>把利率、通胀、财政和汇率变化翻译成普通人能理解的资产影响。</p>
+            <p>把利率、通胀、财政和汇率变化翻译成可理解的资产影响。</p>
           </article>
           <article>
-            <span class="feature-icon">EQ</span>
+            <span class="feature-icon">03</span>
             <h3>公司观察</h3>
             <p>关注财报、产业链、管理层变动和估值叙事的真实变化。</p>
           </article>
           <article>
-            <span class="feature-icon">DT</span>
+            <span class="feature-icon">04</span>
             <h3>数据更正</h3>
             <p>每条重要数据保留来源、更新时间和更正记录，减少误读。</p>
           </article>
@@ -201,6 +234,11 @@
         </div>
       </section>
 
+      <section class="container source-strip" aria-label="数据来源说明">
+        <span>Source notes</span>
+        <p>示例数据用于展示页面结构。接入真实行情前，请标注数据供应商、延迟时间和更新频率。</p>
+      </section>
+
       <section class="container open-source" id="open-source">
         <div>
           <p class="label">Open source</p>
@@ -211,7 +249,7 @@
           </p>
         </div>
         <div class="source-actions">
-          <a class="btn btn-primary" href="https://github.com/">GitHub Pages</a>
+          <a class="btn btn-primary" href="https://github.com/xiaoj6547-alt/mingxian-finance-news">查看源码</a>
           <a class="btn btn-ghost" href="mailto:you@example.com">投稿联系</a>
         </div>
       </section>
